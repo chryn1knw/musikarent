@@ -21,7 +21,7 @@ Route::get('/dashboard', function () {
     }
 
     return redirect()->route('customer.dashboard');
-})->middleware(['auth', 'verified'])->name('customer.dashboard');
+})->middleware(['auth', 'verified'])->name('redirect.dashboard');
 
 Route::middleware(['auth', 'admin'])
     ->prefix('admin')
